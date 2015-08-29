@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Practica de CSS</title>
+		<style>
+		/* Reglas */
+		/* Selector de elemento*/
+		h1{
+			color: Pink;
+			font-style: italic;
+		}
+		/* Selector de clase */
+		.titulo_azul{
+			color:blue;
+		}
+		.primer_elemento{
+			color: gray;
+		}
+
+		/* Selector de ID */
+		#three{
+			color: green;
+		}
+		/* Selector de Descendiente */
+		p span{
+			color: purple;
+		}
+		div{
+			border: 2px solid black;
+		}
+		span{
+			border: 3px solid red;
+		}
+		div span{
+			color: yellow;
+		}
+		div div{
+			color:orange;
+		}
+		.segundo_elemento span{
+			font-size: 40px;
+		}
+		.segundo_elemento p{
+			color: brown;
+		}
+		.segundo_elemento span:hover{
+			color: red;
+
+		}
+
+		</style>
+	</head>
+	<body>
+		<h1>titulo</h1>
+		<h1 class="titulo_azul">Titulo 2</h1>
+		<ul>
+			<li id="one" class="primer_elemento"> Elemento uno </li>
+			<li id ="two"> Elemento dos </li>
+			<li id="three">Elemento tres</li>
+
+		</ul>
+		<ul>
+			<li class="primer_elemento"> elemento uno II</li>
+		</ul>
+		<span> Estes es un span </span>
+		<div>
+			<span>Esto es un div, y debe ser purpura</span>
+			<div>ESTO DEBE SER NARANJA</div>
+
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="segundo_elemento">
+			
+		<span> HOLA AMIGO </span>
+		<p>Lorealksdjalskjda alskjdalskdjalksd laksjdalskdjalskdj lkasjdlkajsdlaskjd lkajsdlajdlakjdlaskjdalsdjkalsdkjalskjdlksjd</p>
+		</div>
+	</body>
+</html>
