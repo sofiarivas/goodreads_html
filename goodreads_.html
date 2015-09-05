@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> Good Reads</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type ="type/css" href="">
+	<script type="text/javascript"></script>
+	<style type="text/css">
+
+	body{
+		font-family: georgia;
+		margin: 0px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	h3{
+
+		font-family: helvetica;
+		font-size: 18px;
+	}
+	p{
+		font-size: 13px;
+
+	}
+
+	#main_container{
+		background-image: url("fondo.jpg");
+		height: 370px;
+		padding-top: 10px;
+	}
+	#logo{
+		margin: 5px;
+		padding-left: 30px;
+		display: inline;
+	}
+	#header_superior{
+		
+		height: 74px;
+		font-family: helvetica;
+		font-size: 12px;
+		color: #999999;
+	}
+
+	#header_superior input{
+		width: 120px;
+		height: 16px;
+		border: 1px solid gray;
+		border-radius: 3px;
+	}
+	#login{
+		float: right;
+	}
+	#login li{
+		display: inline;
+	}
+	#header_inferior{
+		display: inline-flex; 
+		width: 100%;
+	}
+	#cover{
+		width: 700px;
+		text-align: center;
+	}
+	#ingresar{
+		float: right;
+	}
+	.lista_login{
+		list-style: none;
+	}
+	.lista_login input{
+		top-border: 1px solid #a8aeac;
+		width: 280px;
+		height: 32px;
+		margin-top: 5px;
+		border-radius: 3px;
+	}
+	#nav_opciones{
+		display: inline-block;
+		width: 50%;
+	}
+	#nav_opciones article{
+		width: 280px;
+		display: inline-block;
+	}
+	#que_leer{
+		background-color: #f4f2e9;
+		border-radius: 5px;
+		height: 433px;
+		width: 625px;
+		padding: 10px;
+
+	}
+	#que_leer h2{
+		margin: 7px;
+	}
+
+
+	</style>
+	</head>
+
+	<body>
+		<header> 
+			<div id="main_container">
+				<div id="header_superior">
+				<div id="logo"><img  src="/Users/Suculenta/devf_cintablanca/practicas_html/logo.png"></div>
+				<div id="login">
+					
+						<ul>
+							<li><input type="text" name="email" size="40" placeholder="Email Adress" value=""/></li>
+							<li><input type="text" name="email" size="40" placeholder="Password" value=""/></li>
+							<li id="boton_sign">Sign In</li>
+						</ul>
+
+						<ul>
+							<li>Remember Me</li>
+							<li>Forgot it</li>
+						</ul>
+				</div>
+				</div>
+
+
+				<div id="header_inferior">
+				<div><h1 id="cover">Meet your next <br>favorite book</h1></div>
+				<div>
+					<div id="ingresar"><ul>
+						<li class="lista_login"><h3>New here? Create a free acount!</h3></li>
+						<li class="lista_login"><input type="text" name="user" size="10" placeholder="Name" value=""/></li>
+						<li class="lista_login"><input type="text" name="email" size="40" placeholder="Email Adress" value=""/></li>
+						<li class="lista_login"><input type="text" name="Password" size="40"  placeholder="Password"value=""/></li>
+						<li class="lista_login"><input type="submit" name"" value="Sign Up" /></li>
+						
+					</ul>
+					</div>
+					<div>
+						<p>Or sign in using</p>
+					</div>
+				</div>
+				</div>
+			</div>
+			<main>
+				<section id="nav_opciones">
+				<article>
+					<h2>Deciding what to read?</h2>
+					<p>You’re in the right place. Tell us what titles or genres you’ve enjoyed in the past, and we’ll give you surprisingly insightful recommendations.</p>
+				</article>
+				<article >
+					<h2>What are your friends reading</h2>
+					<p>Chances are your friends are discussing their favorite (and least favorite) books on Goodreads. Want to learn more? Take the tour.</p>
+				</article>
+				</section>
+				<section id="que_leer">
+					<h2>What will you discover?</h2>
+				</section>
+			</main>
+			<aside>
+
+			</aside>
+
+		</header>
+
+	</body>
+
+</html>
