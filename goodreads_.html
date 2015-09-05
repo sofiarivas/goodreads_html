@@ -11,6 +11,9 @@
 		font-family: georgia;
 		margin: 0px;
 	}
+	h1{
+		font-size: 65px;
+	}
 	h2{
 		font-size: 20px;
 	}
@@ -40,12 +43,23 @@
 		font-family: helvetica;
 		font-size: 12px;
 		color: #999999;
+		padding-right: 30px;
+
 	}
 
 	#header_superior input{
 		width: 120px;
 		height: 16px;
 		border: 1px solid gray;
+		border-radius: 3px;
+		padding: 5px;
+	}
+	#boton_sign{
+		background: white;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-right: 10px;
+		padding-left: 10px;
 		border-radius: 3px;
 	}
 	#login{
@@ -75,8 +89,14 @@
 		margin-top: 5px;
 		border-radius: 3px;
 	}
+	#boton_sign2{
+		width: 85px;
+		height: 40px;
+		padding: 8px;
+		background: #fdd05f;
+	}
 	#nav_opciones{
-		display: inline-block;
+		display: inline;
 		width: 50%;
 	}
 	#nav_opciones article{
@@ -89,11 +109,22 @@
 		height: 433px;
 		width: 625px;
 		padding: 10px;
+		display: inline-block;
 
 	}
 	#que_leer h2{
 		margin: 7px;
 	}
+	#area_lateral{
+		width: 300px;
+		display: inline;
+	}
+
+	.login_box input[type="text"] {
+    font-size: 13px;
+	}
+	.lista_login input[type="text"] {
+    font-size: 18px;}
 
 
 	</style>
@@ -107,8 +138,8 @@
 				<div id="login">
 					
 						<ul>
-							<li><input type="text" name="email" size="40" placeholder="Email Adress" value=""/></li>
-							<li><input type="text" name="email" size="40" placeholder="Password" value=""/></li>
+							<li class="login_box"><input type="text" name="email" size="40" placeholder="Email Adress" value=""/></li>
+							<li class="login_box"><input type="text" name="email" size="40" placeholder="Password" value=""/></li>
 							<li id="boton_sign">Sign In</li>
 						</ul>
 
@@ -128,12 +159,13 @@
 						<li class="lista_login"><input type="text" name="user" size="10" placeholder="Name" value=""/></li>
 						<li class="lista_login"><input type="text" name="email" size="40" placeholder="Email Adress" value=""/></li>
 						<li class="lista_login"><input type="text" name="Password" size="40"  placeholder="Password"value=""/></li>
-						<li class="lista_login"><input type="submit" name"" value="Sign Up" /></li>
+						<li class="lista_login"><input id="boton_sign2"type="submit" name"" value="Sign Up" /></li>
+
 						
 					</ul>
 					</div>
 					<div>
-						<p>Or sign in using</p>
+						<div id="redes">Or sign in using</div>
 					</div>
 				</div>
 				</div>
@@ -153,8 +185,8 @@
 					<h2>What will you discover?</h2>
 				</section>
 			</main>
-			<aside>
-
+			<aside id="area_lateral">
+				<h2>Readers online now</h2>
 			</aside>
 
 		</header>
