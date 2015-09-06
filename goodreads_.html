@@ -13,28 +13,43 @@
 	}
 	h1{
 		font-size: 65px;
+		color: #4d3a30;
 	}
 	h2{
+		
 		font-size: 20px;
+		margin-bottom: 8px;
 	}
 	h3{
 
 		font-family: helvetica;
 		font-size: 18px;
 	}
-	p{
-		font-size: 13px;
-
+	h4{
+		text-align: right;
+		font-family: helvetica;
+		font-size: 16px;
+		color: #aaa;
+		font-weight: 400;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-top: 2px;
 	}
+	p{
+		font-family: georgia;
+		line-height: 18px;
+		font-size: 13px;
+	}
+	
 
 	#main_container{
 		background-image: url("fondo.jpg");
 		height: 370px;
-		padding-top: 10px;
+	
 	}
 	#logo{
-		margin: 5px;
-		padding-left: 30px;
+		
+		
 		display: inline;
 	}
 	#header_superior{
@@ -43,7 +58,9 @@
 		font-family: helvetica;
 		font-size: 12px;
 		color: #999999;
-		padding-right: 30px;
+		padding-top: 10px;
+		padding-left: 60px;
+		padding-right: 60px;
 
 	}
 
@@ -65,12 +82,17 @@
 	#login{
 		float: right;
 	}
+	#login ul{
+		margin-top: 0px;
+		margin-right: 
+	}
 	#login li{
+
 		display: inline;
 	}
 	#header_inferior{
 		display: inline-flex; 
-		width: 100%;
+
 	}
 	#cover{
 		width: 700px;
@@ -95,37 +117,103 @@
 		padding: 8px;
 		background: #fdd05f;
 	}
-	#nav_opciones{
-		display: inline;
-		width: 50%;
-	}
-	#nav_opciones article{
-		width: 280px;
-		display: inline-block;
-	}
-	#que_leer{
-		background-color: #f4f2e9;
-		border-radius: 5px;
-		height: 433px;
-		width: 625px;
-		padding: 10px;
-		display: inline-block;
-
-	}
-	#que_leer h2{
-		margin: 7px;
-	}
+	
 	#area_lateral{
+		
 		width: 300px;
-		display: inline;
+		height: 192px;
+		float: left;
+		margin-left: 14px;
 	}
+	.text_box{
+		width: 290px;
+		display: inline-block;
+		margin-bottom: 10px;
+		margin-left: 10px;
+	}
+	.text_box_izq{
+		width: 290px;
+		display: inline-block;
+		margin-bottom: 10px;
+		margin-right: 30px;
 
+	}
+	.flecha_icono{
+		margin-bottom: 60px;
+		margin-right: 10px;
+	}
+	.portada_imagen{
+		width: 80px;
+		height: 120px;
+		margin-right: 12px;
+	}
 	.login_box input[type="text"] {
     font-size: 13px;
 	}
 	.lista_login input[type="text"] {
-    font-size: 18px;}
+    font-size: 18px;
+}
 
+    #container_left{
+    	
+    	width: 635px;
+    	height: 800px;
+    	float: left;
+    	padding-right: 10px;
+    	padding-left: 60px;
+    
+    }
+    .recos{
+
+    	display: inline-block;
+    }
+   #container_reco{
+    	background-color: #F4F2E9;
+    	border-radius: 10px;
+    	padding: 20px;
+    	}
+    #container_reco h2{
+    	margin-top: 0px;
+    }
+
+    .foto_perfil{
+    	display: inline;
+
+    }
+    #sponsor_book{
+    	float: left;
+    	display: inline;
+    	margin-right: 10px;
+    	height: 140px;
+    }
+
+    #sponsored_books{
+    		background-color: #F4F2E9;
+			padding-left: 8px;
+    		padding-right: 8px;
+    		padding-top: 6px;
+    		padding-bottom: 6px;
+
+    }
+    .reco_titulo{
+    	text-decoration: underline;
+    	font-size: 12px;
+    	font-weight: bolder;
+    }
+    .reco_texto{
+    	font-size: 12px;
+    }
+    .reco_link{
+    	text-decoration: underline;
+    	font-size: 12px;
+    	color: #008000;
+    }
+
+    .more_book{
+    	font-size: 12px;
+    	color: #666600;
+    	text-align: right;
+    }
 
 	</style>
 	</head>
@@ -159,9 +247,7 @@
 						<li class="lista_login"><input type="text" name="user" size="10" placeholder="Name" value=""/></li>
 						<li class="lista_login"><input type="text" name="email" size="40" placeholder="Email Adress" value=""/></li>
 						<li class="lista_login"><input type="text" name="Password" size="40"  placeholder="Password"value=""/></li>
-						<li class="lista_login"><input id="boton_sign2"type="submit" name"" value="Sign Up" /></li>
-
-						
+						<li class="lista_login"><input id="boton_sign2"type="submit" name"" value="Sign Up" /></li>	
 					</ul>
 					</div>
 					<div>
@@ -170,23 +256,95 @@
 				</div>
 				</div>
 			</div>
-			<main>
-				<section id="nav_opciones">
-				<article>
-					<h2>Deciding what to read?</h2>
-					<p>You’re in the right place. Tell us what titles or genres you’ve enjoyed in the past, and we’ll give you surprisingly insightful recommendations.</p>
-				</article>
-				<article >
-					<h2>What are your friends reading</h2>
-					<p>Chances are your friends are discussing their favorite (and least favorite) books on Goodreads. Want to learn more? Take the tour.</p>
-				</article>
-				</section>
-				<section id="que_leer">
-					<h2>What will you discover?</h2>
-				</section>
-			</main>
+			<div id="container_central">
+				<div id="container_left">
+					<div class="text_box_izq">
+					<h2> Deciding what to read next?</h2>
+					<p> You’re in the right place. Tell us what titles or genres you’ve enjoyed in the past, and we’ll give you surprisingly insightful recommendations.</p></div>
+
+					<div class="text_box">
+					<h2> Deciding what to read next?</h2>
+					<p> You’re in the right place. Tell us what titles or genres you’ve enjoyed in the past, and we’ll give you surprisingly insightful recommendations.</p></div>
+					
+					<div id="container_reco">
+					<div>
+						<h2> Deciding what to read next?</h2>
+						<div class="recos">
+						<p>Because ♥Meagan♥ liked…</p>
+						<img class="portada_imagen" src="libros/libro1.jpg">
+						<img class="portada_imagen" src="libros/libro1.jpg">
+						<img class="portada_imagen" src="libros/libro1.jpg">
+						<img class="portada_imagen" src="libros/libro1.jpg"></div>
+
+						<div class="recos">
+							<img class="flecha_icono" src="libros/arrow.png">
+						</div>
+						<div class="recos">
+							<p>She discovered:</p>
+							<img class="portada_imagen" src="libros/libro1.jpg"></div>
+						
+					</div>
+
+					<div>
+						<div class="recos">
+						<p>Because Brian liked…</p>
+						<img class="portada_imagen" src="libros/libro1.jpg">
+						<img class="portada_imagen" src="libros/libro1.jpg">
+						<img class="portada_imagen" src="libros/libro1.jpg">
+						<img class="portada_imagen" src="libros/libro1.jpg"></div>
+
+						<div class="recos">
+							<img class="flecha_icono" src="libros/arrow.png">
+						</div>
+						<div class="recos">
+							<p>She discovered:</p>
+							<img class="portada_imagen" src="libros/libro1.jpg"></div>
+						
+					</div>
+
+				</div>
+			</div>
+		</div>
 			<aside id="area_lateral">
-				<h2>Readers online now</h2>
+					<div class="perfiles">
+						<h2>Readers online now</h2>
+						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
+					</div>
+					<div id="sponsored_books">
+						<h4>sponsored books</h4>
+						<div id="bloque_book">
+						<div id="sponsor_book">
+							<img src="libros/reco_libro.jpg">
+						</div>
+						<div>
+							<p class="reco_titulo">Wake of Vultures</p>
+							<p class="reco_texto"> "I don't care what else you've seen in the bookstore today.I don't care what else you've seen in the bookstore today. Read this one..." - Kevin Hearne </p>
+							<p class="reco_link">www.goodreads.com</p>
+						
+						</div>
+						</div>
+						<div id="bloque_book">
+						<div id="sponsor_book">
+							<img src="libros/reco_libro.jpg">
+						</div>
+						<div>
+							<p class="reco_titulo">Wake of Vultures</p>
+							<p class="reco_texto"> "I don't care what else you've seen in the bookstore today.I don't care what else you've seen in the bookstore today. Read this one..." - Kevin Hearne </p>
+							<p class="reco_link">www.goodreads.com</p>
+						
+						</div>
+						</div>
+						<p class="more_book">more books</p>
+					</div>
 			</aside>
 
 		</header>
