@@ -9,6 +9,7 @@
 
 	body{
 		font-family: georgia;
+		font-size: 12px;
 		margin: 0px;
 	}
 	h1{
@@ -45,23 +46,19 @@
 	#main_container{
 		background-image: url("fondo.jpg");
 		height: 370px;
+
 	
 	}
 	#logo{
-		
-		
 		display: inline;
 	}
 	#header_superior{
 		
-		height: 74px;
+		height: 67px;
 		font-family: helvetica;
 		font-size: 12px;
 		color: #999999;
 		padding-top: 10px;
-		padding-left: 60px;
-		padding-right: 60px;
-
 	}
 
 	#header_superior input{
@@ -90,17 +87,32 @@
 
 		display: inline;
 	}
+
+	#redes{
+		background-image: url("fondo_negro.png");
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		padding: 11px;
+		text-align: center;
+		color: white;
+
+
+
+
+	}
+
 	#header_inferior{
-		display: inline-flex; 
+		display: inline-flex;
+
 
 	}
 	#cover{
 		width: 700px;
 		text-align: center;
 	}
-	#ingresar{
-		float: right;
-	}
+	
 	.lista_login{
 		list-style: none;
 	}
@@ -115,7 +127,12 @@
 		width: 85px;
 		height: 40px;
 		padding: 8px;
-		background: #fdd05f;
+		background: -webkit-linear-gradient(top, #ffecc6, #feb93c);
+		box-shadow: 0px 3px 3px #aaaa99;
+		border-radius: 6px;
+		font-weight: 700;
+		font-size: 16px;
+		display: inline-block;
 	}
 	
 	#area_lateral{
@@ -160,7 +177,7 @@
     	height: 800px;
     	float: left;
     	padding-right: 10px;
-    	padding-left: 60px;
+    	
     
     }
     .recos{
@@ -178,7 +195,11 @@
 
     .foto_perfil{
     	display: inline;
-
+		
+    }
+    .foto_perfil img{
+    	padding: 0px;
+    	margin: 0px;
     }
     #sponsor_book{
     	float: left;
@@ -193,6 +214,7 @@
     		padding-right: 8px;
     		padding-top: 6px;
     		padding-bottom: 6px;
+    		margin-top: 20px;
 
     }
     .reco_titulo{
@@ -214,6 +236,120 @@
     	color: #666600;
     	text-align: right;
     }
+    #buscar{
+    	text-align: left;
+    	display: inline;
+    }
+    #buscador{
+    	float: right;
+    	border-radius: 3px;
+    	border: 1px solid #999;
+    	padding: 5px;
+    	width: 300px;
+    }
+
+    #busqueda_nav{
+    	margin-top: 25px;
+    }
+
+ 	.listas_reco ul{
+ 	font-family: helvetica;
+ 	font-size: 12px;
+ 	float: left;
+ 	list-style: none;
+ 	line-height: 18px;
+ 	color: #215625;
+ 	width: 18%;
+	 }
+
+	 .link_more{
+	 	font-weight: bolder;
+	 	font-family: helvetica;
+	 	color: #215625;
+	 }
+	
+	.tercios_bloques{
+	 	font-family: georgia;
+	 	font-size: 14px;
+	 	line-height: 18px;
+	 	list-style: none;
+	 	width: 33%;
+	 	display: inline-block;
+
+	 }
+	 .tercios_bloques ul{
+	 	list-style: none;
+
+	 }
+	 .portada_libritos{
+	 	vertical-align: center;
+	 	width: 26px;
+	 	height: 40px;
+	 	float: right;
+	 	margin-right: 3px;
+
+	 }
+	 .love_item{
+	 	padding-top: 2px;
+	 	padding-bottom: 4px;
+	 	border-bottom: 1px solid #ebece7;
+
+
+	 }
+	 .love_item h2{
+	 	margin-bottom: 10px;
+	 }
+    .titulo_librito{
+    	font-family: georgia;
+    	font-size: 14px;
+    	color: #666600;
+    	padding-top: 3px;
+    	padding-bottom: 3px;
+    }
+
+    .subtitulo_librito{
+    	color: #aaaaaa;
+    	font-size: 10px;
+    	padding-bottom: 5px;
+    }
+    .link_boton{
+    	padding: 4px 12px;
+    	border: 1px solid #9d8a78;
+    	border-radius: 3px;
+    	text-decoration: none;
+    	color: #333333;
+    	font-weight: bold;
+    	font-size: 11px;
+    	font-family: helvetica;
+    	background-color: #f6f6ee;
+    }
+
+   .text_lateral{
+   	font-size: 10px;
+   	line-height: 12px;
+   	width: 190px;
+   	float: right;
+   	color: #706b5f;
+   }
+
+   #bloque_acceso{
+   	position: relative;
+
+   }
+   #ingresar ul{
+   	list-style: none;
+   	padding: 0px;
+
+
+   }
+   #or_sign{
+   	vertical-align: 6px;
+   	padding-right: 30px;
+   }
+   .icono_redes{
+   	margin-right: 3px;
+   }
+
 
 	</style>
 	</head>
@@ -221,6 +357,7 @@
 	<body>
 		<header> 
 			<div id="main_container">
+				<div style="width: 1000px; margin: 0px auto;">
 				<div id="header_superior">
 				<div id="logo"><img  src="/Users/Suculenta/devf_cintablanca/practicas_html/logo.png"></div>
 				<div id="login">
@@ -240,23 +377,31 @@
 
 
 				<div id="header_inferior">
-				<div><h1 id="cover">Meet your next <br>favorite book</h1></div>
-				<div>
-					<div id="ingresar"><ul>
-						<li class="lista_login"><h3>New here? Create a free acount!</h3></li>
-						<li class="lista_login"><input type="text" name="user" size="10" placeholder="Name" value=""/></li>
-						<li class="lista_login"><input type="text" name="email" size="40" placeholder="Email Adress" value=""/></li>
-						<li class="lista_login"><input type="text" name="Password" size="40"  placeholder="Password"value=""/></li>
-						<li class="lista_login"><input id="boton_sign2"type="submit" name"" value="Sign Up" /></li>	
-					</ul>
-					</div>
-					<div>
-						<div id="redes">Or sign in using</div>
-					</div>
-				</div>
+					<h1 id="cover">Meet your next <br>favorite book</h1>
+						<div id="bloque_acceso">
+							<div id="ingresar"><ul>
+								<li class="lista_login"><h3>New here? Create a free acount!</h3></li>
+								<li class="lista_login"><input type="text" name="user" size="10" placeholder="Name" value=""/></li>
+								<li class="lista_login"><input type="text" name="email" size="40" placeholder="Email Adress" value=""/></li>
+								<li class="lista_login"><input type="text" name="Password" size="40"  placeholder="Password"value=""/></li>
+								<li class="lista_login"><input id="boton_sign2"type="submit" name"" value="Sign Up" /> <p class="text_lateral">By clicking “Sign up” I agree to the Goodreads Terms of Service and confirm that I am at least 13 years old. Sign up</p></li>	
+								</ul>
+							</div>
+							
+							<div id="redes"> <span id="or_sign"> Or sign in using:</span> 
+									<img class="icono_redes" src="redes/1.png">
+									<img class="icono_redes" src="redes/2.png">
+									<img class="icono_redes" src="redes/3.png">
+									<img class="icono_redes" src="redes/4.png">
+
+							</div>
+							
+						</div>
 				</div>
 			</div>
+			</div>
 			<div id="container_central">
+				<div style="width: 1000px; margin: 0px auto;">
 				<div id="container_left">
 					<div class="text_box_izq">
 					<h2> Deciding what to read next?</h2>
@@ -272,52 +417,139 @@
 						<div class="recos">
 						<p>Because ♥Meagan♥ liked…</p>
 						<img class="portada_imagen" src="libros/libro1.jpg">
-						<img class="portada_imagen" src="libros/libro1.jpg">
-						<img class="portada_imagen" src="libros/libro1.jpg">
-						<img class="portada_imagen" src="libros/libro1.jpg"></div>
+						<img class="portada_imagen" src="libros/libro2.jpg">
+						<img class="portada_imagen" src="libros/libro3.jpg">
+						<img class="portada_imagen" src="libros/libro4.jpg"></div>
 
 						<div class="recos">
 							<img class="flecha_icono" src="libros/arrow.png">
 						</div>
 						<div class="recos">
 							<p>She discovered:</p>
-							<img class="portada_imagen" src="libros/libro1.jpg"></div>
+							<img class="portada_imagen" src="libros/libro5.jpg"></div>
 						
 					</div>
 
 					<div>
 						<div class="recos">
 						<p>Because Brian liked…</p>
-						<img class="portada_imagen" src="libros/libro1.jpg">
-						<img class="portada_imagen" src="libros/libro1.jpg">
-						<img class="portada_imagen" src="libros/libro1.jpg">
-						<img class="portada_imagen" src="libros/libro1.jpg"></div>
+						<img class="portada_imagen" src="libros/libro6.jpg">
+						<img class="portada_imagen" src="libros/libro7.jpg">
+						<img class="portada_imagen" src="libros/libro8.jpg">
+						<img class="portada_imagen" src="libros/libro9.jpg"></div>
 
 						<div class="recos">
 							<img class="flecha_icono" src="libros/arrow.png">
 						</div>
 						<div class="recos">
 							<p>She discovered:</p>
-							<img class="portada_imagen" src="libros/libro1.jpg"></div>
+							<img class="portada_imagen" src="libros/libro10.jpg"></div>
 						
+						</div>
+					
 					</div>
+					<div id="busqueda">
+						<div id="busqueda_nav">
+							<h2 id="buscar">Search and browse books</h2>
+							<input id="buscador" type="text" name="busqueda" size="20" placeholder="Title / Author / ISBN"></div>
 
+						<div class="listas_reco">
+							<ul>
+								<li>Art</li>
+								<li>Biography</li>
+								<li>Business</li>
+								<li>Chick Lit</li>
+								<li>Children's</li>
+								<li>Christian</li>
+								<li>Classics</li>
+								<li>Comis</li>
+								<li>Contemporary</li>
+								<li>Cookbooks</li>
+							</ul></div>
+
+						<div class="listas_reco">
+							<ul>
+								<li>Art</li>
+								<li>Biography</li>
+								<li>Business</li>
+								<li>Chick Lit</li>
+								<li>Children's</li>
+								<li>Christian</li>
+								<li>Classics</li>
+								<li>Comis</li>
+								<li>Contemporary</li>
+								<li>Cookbooks</li>
+							</ul></div>
+						
+						<div class="listas_reco">
+							<ul>
+								<li>Art</li>
+								<li>Biography</li>
+								<li>Business</li>
+								<li>Chick Lit</li>
+								<li>Children's</li>
+								<li>Christian</li>
+								<li>Classics</li>
+								<li>Comis</li>
+								<li>Contemporary</li>
+								<li>Cookbooks</li>
+							</ul></div>	
+
+						<div class="listas_reco">
+							<ul>
+								<li>Art</li>
+								<li>Biography</li>
+								<li>Business</li>
+								<li>Chick Lit</li>
+								<li>Children's</li>
+								<li>Christian</li>
+								<li>Classics</li>
+								<li>Comis</li>
+								<li>Contemporary</li>
+								<li class="link_more">More Genres...</li>
+							</ul></div>	
+						</div>			
+						
+						<div class="tercios_bloques"><h2>Trivia</h2>
+							Which of these books was not written by Charlotte Brontë?
+							<ul>
+								<li>a. Jane Eyre</li>
+								<li>b. The Professor</li>
+								<li>c. Villette</li>
+								<li>d. Wuthering Heights</li>
+							</ul>
+							
+							
+							
+						</div>
+						<div class="tercios_bloques"><h2>Quizzes</h2>
+
+
+
+						</div>
+						<div class="tercios_bloques"><h2>Quotes</h2>
+						“Always forgive your enemies; nothing annoys them so much.” 
+						― Oscar Wilde
+						</div>
+				</div>
+					
 				</div>
 			</div>
-		</div>
+
 			<aside id="area_lateral">
+					
 					<div class="perfiles">
 						<h2>Readers online now</h2>
 						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
-						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
-						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
-						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
-						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
-						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
-						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
-						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
-						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
-						<div class="foto_perfil" ><img src="libros/perfil1.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil2.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil3.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil4.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil5.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil6.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil7.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil8.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil9.jpg"></div>
+						<div class="foto_perfil" ><img src="libros/perfil10.jpg"></div>
 					</div>
 					<div id="sponsored_books">
 						<h4>sponsored books</h4>
@@ -343,7 +575,72 @@
 						
 						</div>
 						</div>
-						<p class="more_book">more books</p>
+						<p class="more_book">more books...</p>
+					</div>
+					<div id="love_lists">
+						<h2>Love list?</h2>
+
+						<div class="love_item">
+							<div>
+							<img class="portada_libritos" src="libros/librito2.jpg">
+							<img class="portada_libritos" src="libros/librito1.jpg">
+							<img class="portada_libritos" src="libros/librito4.jpg">
+							<img class="portada_libritos" src="libros/librito3.jpg">
+							</div>
+
+							<div class="titulo_librito">
+								Best for Book Clubs
+							</div>
+
+							<div class="subtitulo_librito">
+								Best for Book Clubs
+							</div>
+						</div>
+
+						<div class="love_item">
+							<div>
+							<img class="portada_libritos" src="libros/librito5.jpg">
+							<img class="portada_libritos" src="libros/librito3.jpg">
+							<img class="portada_libritos" src="libros/librito2.jpg">
+							<img class="portada_libritos" src="libros/librito1.jpg">
+							</div>
+
+							<div class="titulo_librito">
+								Best for Book Clubs
+							</div>
+
+							<div class="subtitulo_librito">
+								Best for Book Clubs
+							</div>
+						</div>
+
+						<div class="love_item">
+							<div>
+							<img class="portada_libritos" src="libros/librito1.jpg">
+							<img class="portada_libritos" src="libros/librito2.jpg">
+							<img class="portada_libritos" src="libros/librito3.jpg">
+							<img class="portada_libritos" src="libros/librito4.jpg">
+							</div>
+
+							<div class="titulo_librito">
+								Best for Book Clubs
+							</div>
+
+							<div class="subtitulo_librito">
+								Best for Book Clubs
+							</div>
+						</div>
+
+						<p class="link_more">More books...</p>
+					</div>
+
+					<div id="publisher">
+						<div>
+						<h2>Are you a publisher?</h2>
+						Gain access to a massive audience of more than 40 million book lovers. Goodreads is a great place to promote your books.</div><br>
+						<div id="botones_publisher">
+						<a class="link_boton" href="">Author Program</a>
+						<a class="link_boton" href="">Advertise</a></div>
 					</div>
 			</aside>
 
